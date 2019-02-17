@@ -64,7 +64,7 @@ public class Package extends BaseEntity{
     }
 
     @ManyToOne(targetEntity = User.class)
-    @JoinColumn(name = "recipient_id",referencedColumnName = "id")
+    @JoinColumn(name = "recipient_id",referencedColumnName = "id", nullable = false)
     public User getRecipient() {
         return this.recipient;
     }

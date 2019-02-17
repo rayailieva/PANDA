@@ -11,4 +11,5 @@ public interface GenericRepository<E, ID> {
     List<E> findAll();
 
     Long size();
+
 }
